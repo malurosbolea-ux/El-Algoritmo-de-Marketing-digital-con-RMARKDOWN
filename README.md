@@ -1,31 +1,76 @@
-# Resumen Ejecutivo: El Algoritmo del Marketing Digital
+<div align="center">
 
-**Autora:** María Luisa Ros Bolea  
-**Enfoque:** Análisis Estadístico Avanzado para la Optimización de Inversión Publicitaria
+# 📊 El Algoritmo del Marketing Digital
+### Análisis Estadístico Avanzado para la Optimización de Inversión Publicitaria
+
+![R](https://img.shields.io/badge/Language-R-276DC3?style=for-the-badge&logo=r)
+![Statistics](https://img.shields.io/badge/Focus-Statistical_Inference-success?style=for-the-badge)
+![Data Viz](https://img.shields.io/badge/Library-ggplot2-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+
+<br>
+
+<p align="center">
+  <b>¿Intuición o Certeza?</b> Este proyecto transforma la toma de decisiones en marketing digital utilizando 
+  <b>Simulación de Monte Carlo</b> y <b>Modelado Predictivo</b> para maximizar el ROI.
+</p>
+
+[![](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/maría-luisa-ros-bolea-400780160)
+[![](https://img.shields.io/badge/Portfolio-Visit_Site-228B22?style=flat-square&logo=github&logoColor=white)](https://malurosbolea-ux.github.io/digital-strategy-portfolio)
+[![](https://img.shields.io/badge/Email-Contact_Me-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:malurosbolea@gmail.com)
+
+</div>
+
+---
+
+## 🧐 Sobre el Proyecto
+
+En la industria de la comunicación digital, a menudo se invierten miles de euros basándose en "sensaciones". [cite_start]Como profesional que aspira a liderar con datos, he desarrollado este estudio para responder científicamente a la pregunta: **¿Dónde es más rentable invertir el próximo euro?**[cite: 19, 23].
+
+Este repositorio contiene el código y el análisis completo para demostrar matemáticamente qué plataformas (Instagram, TikTok o LinkedIn) ofrecen el mejor retorno de inversión.
+
+## ⚙️ Metodología e Ingeniería de Datos
+
+Para asegurar el **rigor científico** y evitar la "suciedad" de los datasets públicos, generé mi propio conjunto de datos:
+
+* [cite_start]**Simulación de Monte Carlo:** Generación de 1.000 campañas sintéticas[cite: 52].
+* [cite_start]**Parámetros Reales:** Variables basadas en métricas de mercado 2025 (CPC, CTR y tasas de viralidad)[cite: 31, 279].
+* [cite_start]**Datos Limpios:** 0 valores nulos y control total de distribuciones (Normal, Poisson)[cite: 34].
+
+## 📈 Hallazgos Clave (Insights)
+
+| Métrica | Resultado | Interpretación Estratégica |
+| :--- | :--- | :--- |
+| **Consistencia** | `LinkedIn` | [cite_start]El canal más seguro y con mayor rendimiento medio[cite: 103]. |
+| **Viralidad** | `TikTok` | Alta volatilidad. [cite_start]Muestra *outliers* extremos pero bajo rendimiento medio[cite: 106]. |
+| **ROI Marginal** | `Pendiente Alta` | En LinkedIn, la inversión escala linealmente con las ventas. [cite_start]En TikTok, la curva es plana[cite: 119, 121]. |
+
+## 🧠 Análisis Estadístico
+
+Este proyecto va más allá de la descripción visual, aplicando inferencia estadística rigurosa:
+
+### 1. ANOVA de un Factor
+* **Hipótesis:** ¿Son iguales las medias de ventas entre plataformas?
+* [cite_start]**Resultado:** `p-valor < 2e-16`[cite: 143].
+* **Conclusión:** Rechazo rotundo de la hipótesis nula. Las diferencias de rendimiento son estadísticamente significativas.
+
+### 2. Regresión Lineal Simple
+* **Modelo:** $Ventas = \beta_0 + \beta_1 \cdot Presupuesto$
+* [cite_start]**Precisión:** `R-squared ≈ 0.75`[cite: 164].
+* **Impacto:** El modelo explica el 75% de la variabilidad, permitiendo predicciones de ventas con alto grado de confianza.
+
+## 🛠️ Tecnologías Utilizadas
+
+* **Lenguaje:** R
+* **Librerías:** `tidyverse`, `ggplot2`, `knitr`
+* **Entorno:** RStudio
 
 ---
 
-### 1. Motivación: Del "Olfato" al Dato
-En el sector de la comunicación digital, demasiadas decisiones se toman basándose en la intuición ("creo que esto funcionará"). [cite_start]Mi objetivo con este proyecto es profesionalizar este proceso, utilizando la estadística para responder con certeza matemática a una pregunta de negocio crítica: **¿Dónde debo invertir el próximo euro para maximizar el retorno?**[cite: 19, 23].
+<div align="center">
+  
+**¿Te interesa ver el código completo?** Revisa el archivo `.Rmd` en este repositorio para ver el paso a paso del análisis.
 
-### 2. Metodología Científica: Simulación de Monte Carlo
-[cite_start]Para garantizar la robustez del estudio y evitar los problemas de calidad de los datos públicos, he generado mi propio dataset mediante **Simulación de Monte Carlo**[cite: 30, 50].
-* [cite_start]**Diseño:** 1.000 campañas simuladas bajo parámetros controlados[cite: 52].
-* [cite_start]**Variables:** He replicado el comportamiento real de plataformas como **Instagram, TikTok y LinkedIn** basándome en métricas de la industria (CTR, CPC)[cite: 32, 54].
-* [cite_start]**Reproducibilidad:** El uso de una semilla (`set.seed(2025)`) asegura que este estudio es científicamente reproducible[cite: 35].
+Made with 💚 by **María Luisa Ros Bolea**
 
-### 3. Hallazgos del Análisis Exploratorio (EDA)
-[cite_start]El análisis visual revela tres perfiles de comportamiento claros[cite: 103, 106, 176]:
-* **LinkedIn (Eficiencia):** Es el canal con mayor rendimiento medio y menor riesgo.
-* **TikTok (Volatilidad):** Muestra una gran dispersión. Su éxito depende de "outliers" (viralidad) y no garantiza ventas directas de forma lineal.
-* **Instagram (Estabilidad):** Funciona como un canal intermedio de cobertura.
-
-### 4. Evidencia Estadística (Inferencia)
-He validado estas observaciones mediante contrastes de hipótesis rigurosos:
-* **ANOVA:** Con un **p-valor < 2e-16**, rechazo la hipótesis nula rotundamente. [cite_start]Las diferencias de rendimiento entre plataformas son estadísticamente significativas, no fruto del azar[cite: 143, 144].
-* [cite_start]**Regresión Lineal:** He construido un modelo capaz de explicar el **75% de la variabilidad** de las ventas ($R^2 \approx 0.75$), lo que me permite predecir resultados futuros con alta precisión[cite: 164].
-
-### 5. Conclusión Estratégica
-Los datos dictan una reasignación del presupuesto. [cite_start]La estrategia óptima para maximizar el ROI es priorizar **LinkedIn** (mayor pendiente de crecimiento) y utilizar **TikTok** únicamente para objetivos de *branding*, ya que el presupuesto no escala linealmente con las ventas en esta última plataforma[cite: 172, 175].
-
----
+</div>
